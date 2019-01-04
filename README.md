@@ -2,6 +2,8 @@
 
 Application repo for a simple blog application built with Nest.js, TypeScript, React and MongoDB.
 
+![ezgif com-video-to-gif 23](https://user-images.githubusercontent.com/19610753/50707672-f03e5600-1061-11e9-8dbd-ede0e28524bb.gif)
+
 ## Getting Started
 This prototype is divided into two separate sections. Namely the Backend ( Built with Nest.js) and the frontend
 ( Built with React ).

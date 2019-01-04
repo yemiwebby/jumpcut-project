@@ -10,23 +10,23 @@ class Home extends Component {
 
                 <div className={'homeContainer'}>
                     <div>
-                        <Link to={'/factorial'}> Activate Factorial Sequence </Link>
+                        <Link to={'/factorial'}> Factorial Sequence </Link>
                     </div>
 
                     <div>
-                        <Link to={'/fibonacci'}> Activate Fibonacci Sequence </Link>
+                        <Link to={'/fibonacci'}> Fibonacci Sequence </Link>
                     </div>
 
                     <div>
-                        <Link to={'/partial-sum'}> Activate Partial Sum Sequence </Link>
+                        <Link to={'/partial-sum'}> Partial Sum Sequence </Link>
                     </div>
 
                     <div>
-                        <Link to={'/prime-sequence'}> Activate Prime Sequence </Link>
+                        <Link to={'/prime-sequence'}> Prime Sequence </Link>
                     </div>
 
                     <div>
-                        <Link to={'/range-sequence'}> Activate Range Sequence </Link>
+                        <Link to={'/range-sequence'}> Range Sequence </Link>
                     </div>
                 </div>
 
