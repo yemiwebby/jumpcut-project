@@ -1,35 +1,35 @@
-# Build a blog using Nest.js, TypeScript, React and MongoDB
+# Engineering Full Stack Dev Test
 
-Application repo for a simple blog application built with Nest.js, TypeScript, React and MongoDB.
+This repository contains the code for the completed task. It is divided into two separate sections. More explanation below.
+
+Take a look at the screenshot below
 
 ![ezgif com-video-to-gif 23](https://user-images.githubusercontent.com/19610753/50707672-f03e5600-1061-11e9-8dbd-ede0e28524bb.gif)
 
+Live demo:
+
+[Jumpcut-Engineering-FullStack-Test-Live](https://jumpcut-frontend-app.herokuapp.com/)
+
+
 ## Getting Started
-This prototype is divided into two separate sections. Namely the Backend ( Built with Nest.js) and the frontend
-( Built with React ).
-
-Install TypeScript globally on your machine if you don't have it installed already:
-
-```bash
-npm install -g typescript
-```
+This project is divided into two separate sections. Namely the Backend ( Built with Node.js / Express) and the frontend ( Built with React ).
 
 ### Clone the repository
-To easily set up the application, clone this repository which contains directory for both sections of the project ( i.e `blog-backend` and `blog-frontend`)
+To easily set up the application, clone this repository which contains directory for both sections of the project ( i.e `jumpcut-backend` and `jumpcut-frontend`)
 
 ```bash
-git clone https://github.com/yemiwebby/nest-react-project.git
+git clone https://github.com/yemiwebby/jumpcut-project.git
 ```
 
 ## Change directory into the newly cloned project
 ```bash
-cd nest-react-project
+cd jumpcut-project
 ```
 
 ## Backend
 ### Change directory into the backend
 ```bash
-cd blog-backend
+cd jumpcut-backend
 ```
 
 ### Install backend dependencies
@@ -37,34 +37,41 @@ cd blog-backend
 ```bash
 npm install
 ```
-Once the installation process is complete, open the `blog-backend` with any favorite editor of yours and navigate to `./src/common/authentication.middleware.ts` and replace the `YOUR_DOMAIN` placeholder with the appropriate credential.
-
-### MongoDB
-Ensure that you have mongoDB installed on your machine before running the application. I have this fully setup on my mac already.
-
-Start mongoDB:
-
-```bash
-sudo mongod
-```
+Once the installation process is complete, open the `jumpcut-backend` with any favorite editor of yours.
 
 ### Run the application
-Open another terminal and still within the `blog-backend` project directory run the application with:
+Open another terminal and still within the `jumpcut-backend` project directory run the application with:
 
 ```bash
-npm run start:dev
+npm run start
 ```
 
-This will start the backend application on port `5000`. This was modified to avoid confliction with the frontend application which by default will run on port `3000`
+This will start the backend application on port `5500`. This was modified to avoid confliction with the frontend application which by default will run on port `3000`
+
+### Test 
+The test cases covered in this project is mostly to ensure that each generator functions returned the appropriate response depending on the sequencer function passed to it as a parameter.
+To run the test, open the terminal from within the `jumpcut-backend` directory and run the following command:
+
+```bash
+npm run test
+```
+
+You will see a similar output as shown below:
+
+![jump-terminal](https://user-images.githubusercontent.com/19610753/50708531-e9fda900-1064-11e9-9f6d-8900fd29a24a.png)
+
+Ensure that you leave the `jumpcut-backend` server running.
 
 
 ## Frontend
-Open another terminal from the `nest-react-project` and navigate to the `blog-frontend` folder to setup the frontend
+Open another terminal from the `jumpcut-project` and navigate to the `jumpcut-frontend` folder to setup the frontend
 
 ### Frontend dependencies
+
 ```bash
-cd blog-frontend
-npm install
+cd jumpcut-frontend
+
+yarn install
 ```
 
 ### Run the frontend app
@@ -73,20 +80,15 @@ npm install
 npm start
 ```
 
-### Include Auth0 App credentials
-
-Navigate to `./src/utils/auth.tsx` file and replace the `YOUR_CLIENT_ID` and `YOUR_DOMAIN` placeholder with the appropriate credentials. You can find the placeholders within the `constructor()` and `logout()` method.
 
 ### Test the application
 Finally open your browser and view the application on http://localhost:3000
 
+
 ## Prerequisites
- [Node.js](https://nodejs.org/en/), [Yarn package manager](https://yarnpkg.com/lang/en/docs/install/#mac-stable), [MongoDB](https://docs.mongodb.com/v3.2/installation/) and [TypeScript](https://www.typescriptlang.org/)
+ [Node.js](https://nodejs.org/en/), [Yarn package manager](https://yarnpkg.com/lang/en/docs/install/#mac-stable)
 
 
 ## Built With
-[Nest.js]()
+[Node.js]()
 [React.js]()
-[Auth0]() 
-[TypeScript]()
-[MongoDB]() 
