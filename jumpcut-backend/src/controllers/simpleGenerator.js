@@ -1,14 +1,14 @@
-const sequence = require('../../generator/index');
-const factorial = require('../../sequencers/factorialSeq').factorialSeq;
-const fibonacci = require('../../sequencers/fibonacciSeq').fibonacciSeq;
-const partialSum = require('../../sequencers/partialSumSeq').partialSumSeq;
-const prime = require('../../sequencers/primeSeq').primeSeq;
-const range = require('../../sequencers/rangeSeq').rangeSeq;
-var genFactorial = sequence.generator(factorial);
-var genFibonacci = sequence.generator(fibonacci);
-var genPartialSum = sequence.generator(partialSum, 1, 3, 7, 2, 0);
-var genPrimeSeq = sequence.generator(prime);
-var genRangeSeq = sequence.generator(range, 1, 2);
+import { generator } from '../../generator/index';
+import factorial from '../../sequencers/factorialSeq';
+import fibonacci from '../../sequencers/fibonacciSeq';
+import partialSum from '../../sequencers/partialSumSeq';
+import prime from '../../sequencers/primeSeq';
+import range from '../../sequencers/rangeSeq';
+let genFactorial = generator(factorial);
+let genFibonacci = generator(fibonacci);
+let genPartialSum = generator(partialSum, 1, 3, 7, 2, 0);
+let genPrimeSeq = generator(prime);
+let genRangeSeq = generator(range, 1, 2);
 
 
 class SimpleGenerator {
@@ -19,7 +19,7 @@ class SimpleGenerator {
     }
 
     static resetFactorialGenerator(req, res) {
-        genFactorial = sequence.generator(factorial);
+        genFactorial = generator(factorial);
         res.json({
             reset: genFactorial.next()
         })
@@ -32,7 +32,7 @@ class SimpleGenerator {
     }
 
     static resetFibonacciGenerator(req, res) {
-        genFibonacci = sequence.generator(fibonacci)
+        genFibonacci = generator(fibonacci)
         res.json({
             reset: genFibonacci.next()
         })
@@ -45,7 +45,7 @@ class SimpleGenerator {
     }
 
     static resetPartialSumGenerator(req, res) {
-        genPartialSum = sequence.generator(partialSum, 1, 3, 7, 2, 0);
+        genPartialSum = generator(partialSum, 1, 3, 7, 2, 0);
         res.json({
             reset: genPartialSum.next()
         })
@@ -58,7 +58,7 @@ class SimpleGenerator {
     }
 
     static resetPrimeSeqGenerator(req, res) {
-        genPrimeSeq = sequence.generator(prime);
+        genPrimeSeq = generator(prime);
         res.json({
             reset: genPrimeSeq.next()
         })
@@ -71,7 +71,7 @@ class SimpleGenerator {
     }
 
     static resetRangeSeqGenerator(req, res) {
-        genRangeSeq = sequence.generator(range, 1, 2);
+        genRangeSeq = generator(range, 1, 2);
         res.json({
             reset: genRangeSeq.next()
         })
