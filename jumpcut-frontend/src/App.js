@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
 import { Switch, Route, Link } from 'react-router-dom';
 import './App.css';
-import Factorial from './components/Factorial';
+import Factorial from './views/Factorial';
 import Home from './components/Home';
-import Fibonacci from './components/Fibonacci';
-import PartialSum from './components/PartialSum';
-import Prime from './components/Prime';
-import RangeSequence from './components/RangeSequence';
+import Fibonacci from './views/Fibonacci';
+import PartialSum from './views/PartialSum';
+import Prime from './views/Prime';
+import RangeSequence from './views/RangeSequence';
 
 class App extends Component {
 
